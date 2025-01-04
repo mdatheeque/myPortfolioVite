@@ -1,0 +1,32 @@
+.tileHeaderText {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20px 10px;
+  cursor: pointer;
+}
+
+.titleHeaderTextNotSelected {
+  color: gray;
+}
+
+.titleHeaderTextSelected {
+  color: black;
+}
+
+.workDetails {
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100px;
+}
+
+.logoContainer {
+  margin-right: 20px;
+}
+
+h2,
+h3,
+h4 {
+  margin: 5px 0px;
+}

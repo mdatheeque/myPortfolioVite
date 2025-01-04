@@ -1,0 +1,22 @@
+.grabbingCursour {
+  cursor: grabbing;
+}
+
+.justGrab {
+  cursor: grab;
+}
+
+.verticalLine {
+  border-left: 2px solid #ffdb4d;
+  height: 200px;
+  position: absolute;
+  left: -5%;
+}
+
+.skillsDes {
+  text-wrap: auto;
+  /* width: 60px; */
+  font-size: 16px;
+  text-align: right;
+  font-weight: bolder;
+}

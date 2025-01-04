@@ -1,0 +1,53 @@
+.homeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.skillsShadow {
+  -webkit-box-shadow: 0px -4px 5px 0px rgba(255, 225, 117, 0.66);
+  -moz-box-shadow: 0px -4px 5px 0px rgba(255, 225, 117, 0.66);
+  box-shadow: 0px -4px 5px 0px rgba(255, 225, 117, 0.66);
+}
+
+.topContainer {
+  position: absolute;
+  top: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.HomeName--MainHeaderText {
+  font-size: 70px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.HomeName--SubHeaderText {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.langSwitcherContainer {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.HomeWorkExpField {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  margin-left: 100px;
+}

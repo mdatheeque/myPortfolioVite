@@ -1,0 +1,15 @@
+.mainContainer__page {
+  width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  background: white;
+}

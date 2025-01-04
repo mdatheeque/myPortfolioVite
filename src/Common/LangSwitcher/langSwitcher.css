@@ -1,0 +1,14 @@
+.langSwitchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 70px;
+}
+
+.langDes {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}

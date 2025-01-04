@@ -1,0 +1,53 @@
+.screen {
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  background-color: white;
+  top: 0;
+  left: 100%; /* Initial off-screen position */
+  transition: left 0.5s ease; /* Smooth transition for the left property */
+  z-index: 1; /* Adjust z-index if needed */
+  -webkit-box-shadow: -15px -15px 13px -14px rgba(255, 227, 115, 0.66);
+  -moz-box-shadow: -15px -15px 13px -14px rgba(255, 227, 115, 0.66);
+  box-shadow: -15px -15px 13px -14px rgba(255, 227, 115, 0.66);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen.active {
+  left: 3%; /* Final position */
+}
+
+.imgContainer {
+  margin-left: 50px;
+}
+
+.closeContainer {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  height: 70px;
+  width: 70px;
+  margin: 20px;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 0.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.location {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
