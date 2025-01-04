@@ -1,5 +1,4 @@
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import NavBar from "./Common/Navbar/NavBar";
 import SideBar from "./Common/SideBar/SideBar";
@@ -9,18 +8,16 @@ import NotionAndContact from "./Common/notionAndContact";
 function App() {
   return (
     <div>
-      <BrowserRouter>
-        <Suspense fallback="loading...">
-          <NavBar />
-          <div className="mainContainer">
-            <div className="mainContainer__page">
-              <Home />
-            </div>
+      <Suspense fallback="loading...">
+        <NavBar />
+        <div className="mainContainer">
+          <div className="mainContainer__page">
+            <Home />
           </div>
-          <NotionAndContact />
-          <SideBar />
-        </Suspense>
-      </BrowserRouter>
+        </div>
+        <NotionAndContact />
+        <SideBar />
+      </Suspense>
     </div>
   );
 }
