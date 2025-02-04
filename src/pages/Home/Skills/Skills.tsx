@@ -11,10 +11,11 @@ import iotImg from "../../../assets/iot hub.png";
 import advInstImg from "../../../assets/Advanced-Installer.png";
 import bashImg from "../../../assets/bash script.png";
 import powershellImg from "../../../assets/powershell.png";
+import reactNative from "../../../assets/react_native_logo.png";
 
 function Skills(props: any) {
   const { setShowShadow } = props;
-  const logoArr = [reactImg, ngImg, nodeImg, dotNetImg, safeImg];
+  const logoArr = [reactImg, reactNative, ngImg, nodeImg, dotNetImg, safeImg];
   const logoSubArr = [powershellImg, bashImg, advInstImg, iotImg];
   const [position, setPosition] = useState({ y1: 0 });
   const [oppPosition, setOppPosition] = useState({ y1: 0 });
@@ -45,7 +46,7 @@ function Skills(props: any) {
     if (newY1 > 120) setShowShadow(true);
     if (newY1 < 120) setShowShadow(false);
 
-    if (newOppY1 <= -200) {
+    if (newOppY1 <= -230) {
       isDragging.current = false;
       setIsDraggingState(false);
       return;
@@ -96,10 +97,7 @@ function Skills(props: any) {
         }}
       >
         {showSkillMessage && (
-          <p className="skillsDes">
-            Held onto the one thing which I love and together it pulled me all
-            these skills !
-          </p>
+          <p className="skillsDes">{t("skillsHoverText")}</p>
         )}
 
         <span>
@@ -138,10 +136,10 @@ function Skills(props: any) {
       >
         <div
           className="verticalLine"
-          style={{ height: `${200 + position.y1 + 50}px` }}
+          style={{ height: `${250 + position.y1 + 50}px` }}
         ></div>
 
-        <h4>Core Skills: </h4>
+        <h4>{t("technicalSkills")} :</h4>
         {logoArr.map((eachlogo, i) => (
           <img
             key={i}
@@ -155,7 +153,7 @@ function Skills(props: any) {
             }}
           />
         ))}
-        <h4>learned out of Curiosity: </h4>
+        <h4>{t("learnedOutOfCuriosity")} : </h4>
         {logoSubArr.map((eachlogo, i) => (
           <img
             key={i}

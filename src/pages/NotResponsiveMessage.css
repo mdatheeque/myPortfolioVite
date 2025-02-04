@@ -1,0 +1,23 @@
+.notResponsiveStyle {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+.description {
+  margin: 20px;
+  text-align: center;
+  text-wrap: auto;
+}
+
+.myName {
+  text-align: center;
+  margin: 50px;
+}

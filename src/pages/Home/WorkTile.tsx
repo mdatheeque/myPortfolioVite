@@ -106,7 +106,7 @@ function WorkTile() {
 
   return (
     <div>
-      <div className="tileHeaders" style={{ width: "300px" }}>
+      <div className="tileHeaders" style={{ width: "350px" }}>
         <span
           id={constants.workTileHeaderTextsPast}
           className={

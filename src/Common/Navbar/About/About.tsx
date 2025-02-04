@@ -31,11 +31,11 @@ function About() {
         </div>
         <div className="location" onClick={handleClick}>
           <FaLocationDot size={25} style={{ marginRight: "15px" }} />
-          <p>Chennai, Tamil Nadu, India</p>
+          <p>{t("location")}</p>
         </div>
         <div className="aboutDes">
           <h2 style={{ textAlign: "center", marginBottom: "40px" }}>
-            ABOUT ME
+            {t("aboutMe")}
           </h2>
           <p
             style={{
@@ -45,8 +45,7 @@ function About() {
               fontWeight: "lighter",
             }}
           >
-            A slob turned philomath who loves to dwell in the field of, well,
-            everything.
+            {t("aboutFirstLine")}
           </p>
           <p
             style={{
@@ -56,7 +55,7 @@ function About() {
               fontWeight: "lighter",
             }}
           >
-            Love to have a conversation with a fellow human.
+            {t("aboutSecondLine")}
           </p>
 
           <p
@@ -68,10 +67,10 @@ function About() {
               marginBottom: "40px",
             }}
           >
-            A curious student. Aspire to be a humble teacher.
+            {t("aboutThirdLine")}
           </p>
           <p style={{ textAlign: "center", fontWeight: "lighter" }}>
-            DEV - DESIGN - ILAYARAJA - FRANK SINATRA - LINGUAPHILE - LOVE
+            {t("likes")}
           </p>
           <p
             style={{
@@ -85,7 +84,7 @@ function About() {
               href="https://here-is-my-portfo.surge.sh/"
               target="_blank"
             >
-              my old portfolio
+              {t("oldPortfolio")}
             </a>
           </p>
         </div>
@@ -102,7 +101,7 @@ function About() {
                 fontWeight: "lighter",
               }}
             >
-              An old pic of mine. But why an old pic if you ask -
+              {t("photoDesFirstLine")}
             </p>
             <p
               style={{
@@ -111,8 +110,7 @@ function About() {
                 fontWeight: "lighter",
               }}
             >
-              only this pic has that one thing I love to see on myself and on
-              others - A smile.
+              {t("photoDesSecondLine")}
             </p>
           </div>
         </div>
